@@ -3,7 +3,7 @@ const host = process.env.NODE_ENV === "production" ? "https://push-notification-
 function post(path, body) {
   return fetch(`${host}${path}`, {
     credentials: "omit",
-    headers: { "content-type": "application/json;charset=UTF-8", "sec-fetch-mode": "cors", },
+    headers: { "content-type": "application/json;charset=UTF-8", "sec-fetch-mode": "cors","origin":"https://localhost:3000",},
     body: JSON.stringify(body),
     method: "POST",
     mode: "cors"

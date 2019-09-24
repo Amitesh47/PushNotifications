@@ -11,6 +11,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "run": "chrome.exe --user-data-dir C:/Chrome dev session --disable-web-security",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
